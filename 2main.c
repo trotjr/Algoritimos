@@ -1,7 +1,9 @@
 #include <stdio.h>
 
 int CalcularFatorial(n){
-  
+  if(n <= 1){
+    return 1;
+  }
   int pn = n * (n-1);
   int sn;
   int i;
@@ -16,7 +18,11 @@ int CalcularFatorial(n){
   return pn;
 };
 int main(){
-  printf("%d\n",CalcularFatorial(0));
+  int i;
+  for(i=0; i <= 10; i++){
+  printf("%d\n",CalcularFatorial(i));
+}
 };
+
 
   
